@@ -1,0 +1,110 @@
+:root {
+  --font: "Kumbh Sans";
+  --main-bg: #19a1ae;
+  --card-bg: #f2f2f2;
+  --primary-font: #2e3349;
+  --secondary-font: #6b7082;
+  --divider: #e8e9ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+  letter-spacing: 1px;
+}
+.circle-top {
+  position: absolute;
+  align-self: flex-start;
+  left: 0;
+  transform: rotate(-180deg);
+}
+.circle-bottom {
+  position: absolute;
+  align-self: flex-end;
+  right: 0;
+}
+main {
+  width: 326px;
+  height: 374px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  z-index: 100;
+}
+
+.top-container {
+  width: 100%;
+  height: 140px;
+  background-image: url("./img/Oval.png");
+}
+#profile-img {
+  position: relative;
+  width: 96px;
+  aspect-ratio: 1/1;
+  top: -20%;
+}
+
+.bottom-container {
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.text-container {
+  position: relative;
+  top: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-font);
+}
+h1 span {
+  font-weight: 400;
+  color: var(--secondary-font);
+}
+.country {
+  font-weight: 400;
+  color: var(--secondary-font);
+  font-size: 14px;
+}
+.stats-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid var(--divider);
+  height: 89px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stat div {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-font);
+}
+
+.stat span {
+  font-weight: 400;
+  color: var(--secondary-font);
+  font-size: 10px;
+}
